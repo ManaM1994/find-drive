@@ -26,13 +26,76 @@ form label{
     display: flex;
     flex-direction: column;
 }
+.from , .until{
+    border-left: 2px solid #333;
+    padding-left: 6px;
+}
 form input{
     background-color: transparent;
     border: none;
     font-family: 'Poppins', sans-serif;
 }
-/* .border{
-    background-color: darkgray;
-    width: 2px;
-    height: 8px;
-} */
+input:focus{
+    outline: none;
+}
+form .text_input{
+    width: 300px;
+    font-size: 1rem;
+}
+.search_btn{
+    display: flex;
+    align-items: center;
+}
+.search_btn button{
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: auto 1rem;
+    }
+    form label{
+        padding: 0.4rem 0;
+    }
+    .from, .until , .text{
+        width: 100%;
+
+    }
+    .from, .until{
+        border-left: none;
+    }
+    .border{
+        border-top: 1px solid #333;
+        
+    }
+    input .text_input{
+        font-size: 0.8rem;
+    }
+    .search_btn{
+        width: 100%;
+        border-top: 1px solid #333;
+        padding: 8px 0;
+    }
+    .search_btn .btn{
+        display: block;
+        background-color: #593cfb;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        margin: 0.5rem 0;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: #4733b7;
+        transition: background-color 1s;
+    }
+    .icon{
+        display: none;
+    }
+}

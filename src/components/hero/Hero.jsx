@@ -9,7 +9,7 @@ const Hero = () => {
         <form>
             <div className={styles.text}>
             <label>where</label>
-            <input type="text" placeholder='where do you want' />
+            <input className={styles.text_input} type="text" placeholder='where do you want' />
 
             </div>
             <div className={styles.from}>
@@ -22,8 +22,9 @@ const Hero = () => {
                 <label>Until</label>
                 <input type="date" />
             </div>
-            <div className={styles.search}>
-                <AiOutlineSearch/>
+            <div className={styles.search_btn}>
+                <AiOutlineSearch className={styles.icon}/>
+                <button className={styles.btn}>search for cars</button>
                 
             </div>
         </form>
