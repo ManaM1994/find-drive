@@ -90,6 +90,7 @@ form .text_input{
         padding: 12px;
         margin: 0.5rem 0;
         cursor: pointer;
+        border-radius: 5px;
     }
     .btn:hover{
         background-color: #4733b7;
